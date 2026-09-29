@@ -17,12 +17,3 @@ resource "aws_subnet" "mysub" {
     }
 }
 
-import {
-  to = aws_vpc.myvpc
-  id = "vpc-0b39b26a3933c6b80"
-}
-
-import {
-  to = aws_subnet.mysub
-  id = "subnet-0a66c45fa83156a04"
-}
