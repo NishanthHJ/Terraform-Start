@@ -5,5 +5,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "itkannadigaru-terraform-zero-to-hero"
+  bucket = "nishanth06"
 }
