@@ -12,3 +12,4 @@ sudo apt update
 sudo apt install jenkins
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+sudo hostname Admin-Server
