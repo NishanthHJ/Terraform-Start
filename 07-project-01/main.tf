@@ -1,6 +1,6 @@
 # provider
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 # vpc creation
@@ -16,7 +16,7 @@ resource "aws_vpc" "myvpc" {
 resource "aws_subnet" "subnet-1" {
     vpc_id = aws_vpc.myvpc.id
     cidr_block = "10.0.1.0/24"
-    availability_zone = "us-west-2a"
+    availability_zone = "us-east-1a"
     map_public_ip_on_launch = true
     tags = {
       Name = "subnet-1-project-by-terraform"
@@ -29,7 +29,7 @@ resource "aws_subnet" "subnet-1" {
 resource "aws_subnet" "subnet-2" {
     vpc_id = aws_vpc.myvpc.id
     cidr_block = "10.0.2.0/24"
-    availability_zone = "us-west-2b"
+    availability_zone = "us-east-1b"
     map_public_ip_on_launch = true
     tags = {
       Name = "subnet-2-project-by-terraform"
